@@ -3,75 +3,453 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A personal portfolio website showcasing my experience, projects, and testimonials."
-    />
-    <meta
-      name="keywords"
-      content="portfolio, web development, projects, experience, testimonials"
-    />
+    <meta name="description" content="A personal portfolio website" />
+    <meta name="keywords" content="portfolio, web development" />
     <meta name="author" content="Your Name" />
     <meta name="robots" content="index, follow" />
 
-    <title>My Portfolio</title>
+    <title>Filbert Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />       
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="experience.css" />
+    <link rel="stylesheet" href="skills.css" />
+    <link rel="stylesheet" href="tes.css" />
   </head>
 
-  <body>
+  <body class="bg-main">
     <nav>
       <div class="nav-left">
         <a href="#" class="brand">Filbert</a>
       </div>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <label for="nav-toggle" class="hamburger">&#9776;</label>
+      <label for="nav-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <div class="nav-right">
-        <ul id="nav-links">
-          <li><a href="#greeting">Greeting</a></li>
+        <ul id="nav-links" for="nav-toggle">
           <li><a href="#about">About Me</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
         </ul>
       </div>
     </nav>
 
-    <section id="greeting">
-      <h1>Hello, I'm Filbert</h1>
-      <img src="your-photo.jpg" alt="Your Photo" class="profile-photo" />
-      <p>Welcome to my portfolio! Scroll down to know more about me.</p>
+    <section class="greeting-section">
+      <div class="greeting-container">
+        <div class="greeting-text">
+          <h1 class="greeting-container-2">
+            <span class="gradient-text">Hello, I'm</span>
+            <span class="dynamic-text" id="dynamic-text">Filbert</span>
+          </h1>
+          <p class="description">
+            Second-year Informatics student with a passion for
+            <span>web development</span>
+            and data science. Excited to learn and contribute to innovative
+            projects and looking forward to an internship.
+          </p>
+          <div class="greeting-button-container">
+            <div class="explore-more-container">
+              <a href="#about" class="hire-me">HIRE ME</a>
+            </div>
+            <div class="explore-more-container">
+              <a href="#about" class="about-me">ABOUT ME</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="about">
-      <h2>About Me</h2>
-      <p>
-        This section is about you! Include information like your background,
-        education, and passions.
-      </p>
+      <div class="about-image">
+        <img src="/assets/images/profile.jpg" alt="Profile Image" />
+      </div>
+      <div class="about-content">
+        <h2>ABOUT ME</h2>
+        <h3 class="about-strong">Full Stack Developer From Indonesia</h3>
+        <p>
+          Hello, I am a second-year Informatics student with a keen interest in
+          both web development and data science. My enthusiasm for these fields
+          is matched by my ability to quickly grasp new concepts, enabling me to
+          work efficiently and collaborate seamlessly within a team. Beyond my
+          technical aptitude, I also excel in effective communication, fostering
+          a positive and productive group dynamic.
+        </p>
+        <div class="about-row">
+          <div class="about-col">
+            <div>
+              <div class="about-title">NAME</div>
+              <p>Filbert</p>
+            </div>
+            <div>
+              <div class="about-title">EMAIL</div>
+              <p>filbertfilbert21@gmail.com</p>
+            </div>
+            <div>
+              <div class="about-title">PHONE</div>
+              <p>+62 853 1470 2004</p>
+            </div>
+          </div>
+          <div class="about-col">
+            <div>
+              <div class="about-title">AGE</div>
+              <p>20 Years</p>
+            </div>
+            <div>
+              <div class="about-title">Education</div>
+              <p>Bachelors in Informatics</p>
+            </div>
+            <div>
+              <div class="about-title">Freelance</div>
+              <p>Available</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn-dld-cv">Download CV</button>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-item">
+          <img
+            src="/assets/images/seasalon.png"
+            alt="E-commerce Platform"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">E-commerce Platform</h3>
+            <p class="project-description">
+              A full-featured online store with user authentication, product
+              management, and payment integration.
+            </p>
+            <div class="project-tech">
+              <span class="tech-item">React</span>
+              <span class="tech-item">Node.js</span>
+              <span class="tech-item">MongoDB</span>
+              <span class="tech-item">Stripe</span>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <a
+              href="https://sea-salon-six.vercel.app/"
+              class="view-project"
+              target="_blank"
+              >View Project <span class="arrow">→</span></a
+            >
+          </div>
+        </div>
+        <div class="project-item">
+          <img
+            src="/assets/images/seatudy.png"
+            alt="Task Management App"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">Task Management App</h3>
+            <p class="project-description">
+              A collaborative task management application with real-time updates
+              and team features.
+            </p>
+            <div class="project-tech">
+              <span class="tech-item">Vue.js</span>
+              <span class="tech-item">Firebase</span>
+              <span class="tech-item">Vuex</span>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <a
+              href="https://seatudy-real.vercel.app/"
+              target="_blank"
+              class="view-project"
+              >View Project <span class="arrow">→</span></a
+            >
+          </div>
+        </div>
+        <div class="project-item">
+          <img
+            src="/assets/images/chatapp.png"
+            alt="Portfolio Website"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description">
+              A responsive portfolio website showcasing my projects and skills.
+            </p>
+            <div class="project-tech">
+              <span class="tech-item">HTML5</span>
+              <span class="tech-item">CSS3</span>
+              <span class="tech-item">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <a
+              href="https://realtime-chat-app-ez.vercel.app/"
+              target="_blank"
+              class="view-project"
+              >View Project <span class="arrow">→</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="design-root">
+      <div class="layout-container">
+        <div class="layout-content-container">
+          <h3 class="heading">Tech Skills</h3>
+          <h3 class="sub-heading">Languages</h3>
+          <div class="skills-container">
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">TypeScript</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Go</div>
+            <div class="skill-item">C</div>
+            <div class="skill-item">C++</div>
+            <div class="skill-item">C#</div>
+            <div class="skill-item">Haskell</div>
+            <div class="skill-item">Java</div>
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+          </div>
+
+          <h3 class="sub-heading">Frameworks</h3>
+          <div class="skills-container">
+            <div class="skill-item">React</div>
+            <div class="skill-item">Next.js</div>
+            <div class="skill-item">tRPC</div>
+            <div class="skill-item">Express</div>
+            <div class="skill-item">Tailwind CSS</div>
+            <div class="skill-item">Framer Motion</div>
+          </div>
+
+          <h3 class="sub-heading">ORM</h3>
+          <div class="skills-container">
+            <div class="skill-item">Drizzle</div>
+            <div class="skill-item">Prisma</div>
+          </div>
+          <h3 class="sub-heading">Databases</h3>
+          <div class="skills-container">
+            <div class="skill-item">MariaDB</div>
+            <div class="skill-item">MySQL</div>
+            <div class="skill-item">PostgreSQL</div>
+          </div>
+
+          <h3 class="sub-heading">Tools</h3>
+          <div class="skills-container">
+            <div class="skill-item">Git</div>
+            <div class="skill-item">Docker</div>
+            <div class="skill-item">Figma</div>
+          </div>
+
+          <h3 class="sub-heading">Cloud Platforms</h3>
+          <div class="skills-container">
+            <div class="skill-item">Vercel</div>
+            <div class="skill-item">AWS</div>
+            <div class="skill-item">VPS</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="experience">
-      <h2>Experience</h2>
-      <p>
-        Highlight your professional experience, companies you worked for, and
-        roles you've had.
-      </p>
-    </section>
+        <h1>My Experience</h1>
+        <div class="exp-container">
+          <div class="exp-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="black"
+              class="work-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
+              />
+            </svg>
+          </div>
+          <div class="exp-col">
+            <div class="exp-row">
+              <h2>Project Manager</h2>
+              <p>2019-2021</p>
+            </div>
+            <h3>Google</h3>
+            <h4>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia mollit anim id est laborum.
+            </h4>
+          </div>
+        </div>
+        <div class="exp-container">
+          <div class="exp-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="black"
+              class="work-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
+              />
+            </svg>
+          </div>
+          <div class="exp-col">
+            <div class="exp-row">
+              <h2>Project Manager</h2>
+              <p>2019-2021</p>
+            </div>
+            <h3>Google</h3>
+            <h4>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia mollit anim id est laborum.
+            </h4>
+          </div>
+        </div>
+        <div class="exp-container">
+          <div class="exp-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="black"
+              class="work-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
+              />
+            </svg>
+          </div>
+          <div class="exp-col">
+            <div class="exp-row">
+              <h2>Project Manager</h2>
+              <p>2019-2021</p>
+            </div>
+            <h3>Google</h3>
+            <h4>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia mollit anim id est laborum.
+            </h4>
+          </div>
+        </div>
+        <div class="exp-container">
+          <div class="exp-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="black"
+              class="work-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
+              />
+            </svg>
+          </div>
+          <div class="exp-col">
+            <div class="exp-row">
+              <h2>Project Manager</h2>
+              <p>2019-2021</p>
+            </div>
+            <h3>Google</h3>
+            <h4>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia mollit anim id est laborum.
+            </h4>
+          </div>
+        </div>
+      </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>
-        Showcase some of your recent projects. Provide descriptions, links, and
-        images if applicable.
-      </p>
-    </section>
-
-    <section id="testimonials">
-      <h2>Testimonials</h2>
-      <p>
-        Share some testimonials from clients or colleagues that showcase your
-        work.
-      </p>
-    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+            <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/Filbert88" class="social-icon">
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <title>GitHub</title>
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/filbert901/" class="social-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/filbert135/" class="social-icon">
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="feather feather-linkedin"
+            >
+              <title>LinkedIn</title>
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+        <p>@2024 Filbert. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

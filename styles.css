@@ -2,10 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Arial", sans-serif;
-  line-height: 1.6;
-  color: #333;
+  font-family: "Poppins", sans-serif;
+  color: #121a21;
   margin: 0;
   padding: 0;
 }
@@ -13,58 +18,60 @@ body {
 /* typography */
 h1 {
   font-size: 2.5rem;
-  color: #222;
+  font-weight: 900;
+  color: #ffffff;
 }
 
 h2 {
   font-size: 2rem;
-  color: #333;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.75rem;
-  color: #444;
+  color: #ffffff;
 }
 
 h4 {
   font-size: 1.5rem;
-  color: #555;
+  color: #ffffff;
 }
 
 h5 {
   font-size: 1.25rem;
-  color: #666;
+  color: #ffffff;
 }
 
 h6 {
   font-size: 1rem;
-  color: #777;
+  color: #ffffff;
 }
 
 p {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
 }
 
-* {
-  box-sizing: border-box;
+.bg-main {
+  background-color: #121a21;
+}
+
+.bg-secondary {
+  background-color: #121a21;
 }
 
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #333;
-  padding: 1rem 0;
+  background-color: #121a21;
+  padding: 1rem 2rem;
   z-index: 100;
-  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav-left {
-  margin-left: 20px;
+  font-weight: bold;
 }
 
 .brand {
@@ -100,23 +107,83 @@ nav {
 
 .hamburger {
   display: none;
-  font-size: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
   cursor: pointer;
-  margin-right: 20px;
 }
 
-section {
-  padding: 100px 20px;
-  text-align: center;
-  min-height: 100vh;
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
 }
 
-#about,
+.nav-toggle:checked + .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle:checked + .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle:checked + .hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translate(10px, -10px);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+  }
+
+  .nav-right ul {
+    display: none;
+    flex-direction: column;
+    background-color: #1b2632;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+  }
+
+  .nav-toggle:checked + .hamburger + .nav-right ul {
+    display: flex;
+  }
+
+  .nav-right ul li {
+    padding-left: 30px;
+    margin: 10px 0;
+  }
+
+  .nav-right ul li a {
+    font-size: 1.2rem;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    gap: 40px;
+  }
+}
+
 #experience,
 #projects,
 #testimonials {
-  background-color: #f4f4f4;
   padding: 50px 20px;
+  color: white;
 }
 
 #about h2,
@@ -126,37 +193,67 @@ section {
   margin-bottom: 20px;
 }
 
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+footer {
+  color: #93adc8;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 @media (max-width: 768px) {
-  .nav-right ul {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    width: 100%;
-    position: absolute;
-    top: 70px;
-    left: 0;
+  .footer-links {
+    gap: 20px;
   }
+}
 
-  .hamburger {
-    display: block;
-  }
+.footer-links a {
+  color: #93adc8;
+  font-size: 16px;
+  text-decoration: none;
+}
 
-  .nav-toggle:checked + .hamburger + .nav-right ul {
-    display: flex;
-  }
+.footer-links a:hover {
+  color: #ddd;
+}
 
-  .nav-right ul li {
-    margin: 10px 0;
-  }
+.social-icons {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 20px;
+  height: auto;
+}
 
-  .nav-right ul li a {
-    font-size: 1.5rem;
-  }
+.social-icons a {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  color: #93adc8;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social-icons a svg {
+  display: block;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}
+
+footer p {
+  font-size: 14px;
 }

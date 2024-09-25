@@ -1,0 +1,91 @@
+#experience {
+  max-width: 600px;
+  margin: 20px;
+  padding-top: 100px;
+  border-radius: 8px;
+}
+
+#experience h1 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.exp-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.exp-icon {
+  margin-top: 8px;
+  margin-right: 20px;
+}
+
+.work-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #e8e9f3;
+  padding: 10px;
+  border-radius:50px;
+}
+
+.exp-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp-row h2,
+.exp-col h2 {
+  margin: 0 !important;
+  padding: 0;
+  text-align: left;
+  font-size: 21px !important;
+}
+
+.exp-row p {
+  font-size: 16px;
+  color: #b0aac0;
+}
+
+.exp-col h3 {
+  font-size: 16px;
+  color: white;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: left;
+}
+
+.exp-col h4 {
+  font-size: 18px;
+  color: #b0aac0;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .exp-icon {
+    margin-bottom: 10px;
+  }
+
+  .exp-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exp-row p {
+    font-size: 14px;
+    color: #b0aac0;
+  }
+
+  .exp-col h4 {
+    font-size: 15px;
+  }
+}
