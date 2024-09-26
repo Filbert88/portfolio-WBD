@@ -74,6 +74,10 @@
 }
 
 @media (max-width: 768px) {
+  #experience h1 {
+    margin-bottom: 20px;
+  }
+  
   .exp-icon {
     margin-bottom: 10px;
   }
