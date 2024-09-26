@@ -3,6 +3,9 @@
   margin: 20px;
   padding-top: 100px;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #experience h1 {
