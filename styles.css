@@ -145,10 +145,10 @@ nav {
   .nav-right ul {
     display: none;
     flex-direction: column;
-    background-color: #1b2632;
+    background-color: #121a21;
     width: 100%;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 0;
   }
 

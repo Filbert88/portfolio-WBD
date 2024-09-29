@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A personal portfolio website" />
     <meta name="keywords" content="portfolio, web development" />
-    <meta name="author" content="Your Name" />
+    <meta name="author" content="Filbert" />
     <meta name="robots" content="index, follow" />
 
     <title>Filbert Portfolio</title>
@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />       
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="about.css" />
@@ -27,7 +27,12 @@
       <div class="nav-left">
         <a href="#" class="brand">Filbert</a>
       </div>
-      <input type="checkbox" id="nav-toggle" name="nav-toggle" class="nav-toggle" />
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        name="nav-toggle"
+        class="nav-toggle"
+      />
       <label for="nav-toggle" class="hamburger">
         <span></span>
         <span></span>
@@ -36,9 +41,9 @@
       <div class="nav-right">
         <ul id="nav-links" for="nav-toggle">
           <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
         </ul>
       </div>
     </nav>
@@ -51,14 +56,14 @@
             <span class="dynamic-text" id="dynamic-text">Filbert</span>
           </h1>
           <p class="description">
-            Second-year Informatics student with a passion for
+            Third-year Informatics student with a passion for
             <span>web development</span>
             and data science. Excited to learn and contribute to innovative
             projects and looking forward to an internship.
           </p>
           <div class="greeting-button-container">
             <div class="explore-more-container">
-              <a href="#about" class="hire-me">HIRE ME</a>
+              <a href="mailto:filbertfilbert21@gmail.com" class="hire-me">HIRE ME</a>
             </div>
             <div class="explore-more-container">
               <a href="#about" class="about-me">ABOUT ME</a>
@@ -113,7 +118,186 @@
             </div>
           </div>
         </div>
-        <button class="btn-dld-cv">Download CV</button>
+        <a href="/assets/CV_Filbert.pdf" download class="btn-dld-cv">
+          Download CV
+        </a>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h1>My Experience</h1>
+      <div class="exp-container">
+        <div class="exp-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="black"
+            class="work-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
+            />
+          </svg>
+        </div>
+        <div class="exp-col">
+          <div class="exp-row">
+            <h2>Full Stack Developer</h2>
+            <p>Jul 2024 - Now</p>
+          </div>
+          <h3>PT PARAMI SEJAHTERA ABADI</h3>
+          <h4>
+            Built a website from scratch for a shipping services company and
+            hosted it on a VPS
+          </h4>
+        </div>
+      </div>
+      <div class="exp-container">
+        <div class="exp-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="black"
+            class="work-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
+            />
+          </svg>
+        </div>
+        <div class="exp-col">
+          <div class="exp-row">
+            <h2>Back End Developer</h2>
+            <p>Jul 2024 - Sep 2024</p>
+          </div>
+          <h3>OSKM ITB 2024</h3>
+          <h4>
+            Developed APIs for a welcoming student website using Next.js, tRPC,
+            and Drizzle ORM.
+          </h4>
+        </div>
+      </div>
+      <div class="exp-container">
+        <div class="exp-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="black"
+            class="work-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
+            />
+          </svg>
+        </div>
+        <div class="exp-col">
+          <div class="exp-row">
+            <h2>Web Developer</h2>
+            <p>Mar 2024 - Jul 2024</p>
+          </div>
+          <h3>Skill Up</h3>
+          <h4>
+            Created responsive web pages and integrated them with the backend.
+          </h4>
+        </div>
+      </div>
+      <div class="exp-container">
+        <div class="exp-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="black"
+            class="work-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
+            />
+          </svg>
+        </div>
+        <div class="exp-col">
+          <div class="exp-row">
+            <h2>Frontend Web Developer</h2>
+            <p>Jan 2024 - Mar 2024</p>
+          </div>
+          <h3>ITB Fair 2024</h3>
+          <h4>
+            Developed a responsive homepage for an ITB event using NextJS,
+            tailwind CSS and framer motion.
+          </h4>
+        </div>
+      </div>
+      <div class="exp-container">
+        <div class="exp-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="black"
+            class="work-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
+            />
+          </svg>
+        </div>
+        <div class="exp-col">
+          <div class="exp-row">
+            <h2>Frontend Web Developer</h2>
+            <p>Sep 2023 - Oct 2023</p>
+          </div>
+          <h3>Parade Wisuda Oktober 2023</h3>
+          <h4>
+            Developed web pages for graduated student and integrated them with
+            the backend.
+          </h4>
+        </div>
+      </div>
+      <div class="exp-container">
+        <div class="exp-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="black"
+            class="work-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
+            />
+          </svg>
+        </div>
+        <div class="exp-col">
+          <div class="exp-row">
+            <h2>Frontend Web Developer</h2>
+            <p>Jun 2023 - Sep 2023</p>
+          </div>
+          <h3>OSKM ITB 2023</h3>
+          <h4>
+            Developed web pages for welcoming students and integrated them with
+            the backend.
+          </h4>
+        </div>
       </div>
     </section>
 
@@ -127,16 +311,16 @@
             class="project-image"
           />
           <div class="project-content">
-            <h3 class="project-title">E-commerce Platform</h3>
+            <h3 class="project-title">Salon Booking Platform</h3>
             <p class="project-description">
-              A full-featured online store with user authentication, product
-              management, and payment integration.
+              A salon website with a booking management system and admin control
+              to manage appointments and services.
             </p>
             <div class="project-tech">
-              <span class="tech-item">React</span>
-              <span class="tech-item">Node.js</span>
-              <span class="tech-item">MongoDB</span>
-              <span class="tech-item">Stripe</span>
+              <span class="tech-item">Next JS</span>
+              <span class="tech-item">Prisma</span>
+              <span class="tech-item">PostgreSQL</span>
+              <span class="tech-item">Vercel</span>
             </div>
           </div>
           <div class="project-overlay">
@@ -155,15 +339,17 @@
             class="project-image"
           />
           <div class="project-content">
-            <h3 class="project-title">Task Management App</h3>
+            <h3 class="project-title">Online Learning Platform</h3>
             <p class="project-description">
-              A collaborative task management application with real-time updates
-              and team features.
+              An education platform where users can purchase courses, view
+              lessons, get certified, and instructors can manage enrolled
+              students.
             </p>
             <div class="project-tech">
-              <span class="tech-item">Vue.js</span>
-              <span class="tech-item">Firebase</span>
-              <span class="tech-item">Vuex</span>
+              <span class="tech-item">Next JS</span>
+              <span class="tech-item">Prisma</span>
+              <span class="tech-item">PostgreSQL</span>
+              <span class="tech-item">Vercel</span>
             </div>
           </div>
           <div class="project-overlay">
@@ -182,14 +368,16 @@
             class="project-image"
           />
           <div class="project-content">
-            <h3 class="project-title">Portfolio Website</h3>
+            <h3 class="project-title">Real-time Chat App</h3>
             <p class="project-description">
-              A responsive portfolio website showcasing my projects and skills.
+              A simple real-time chat application using Socket.io for seamless
+              communication between users.
             </p>
             <div class="project-tech">
-              <span class="tech-item">HTML5</span>
-              <span class="tech-item">CSS3</span>
-              <span class="tech-item">JavaScript</span>
+              <span class="tech-item">Next JS</span>
+              <span class="tech-item">Drizzle</span>
+              <span class="tech-item">PostgreSQL</span>
+              <span class="tech-item">Socket.Io</span>
             </div>
           </div>
           <div class="project-overlay">
@@ -262,137 +450,22 @@
       </div>
     </section>
 
-    <section id="experience">
-        <h1>My Experience</h1>
-        <div class="exp-container">
-          <div class="exp-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1"
-              stroke="black"
-              class="work-icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
-              />
-            </svg>
-          </div>
-          <div class="exp-col">
-            <div class="exp-row">
-              <h2>Project Manager</h2>
-              <p>2019-2021</p>
-            </div>
-            <h3>Google</h3>
-            <h4>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia mollit anim id est laborum.
-            </h4>
-          </div>
-        </div>
-        <div class="exp-container">
-          <div class="exp-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1"
-              stroke="black"
-              class="work-icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
-              />
-            </svg>
-          </div>
-          <div class="exp-col">
-            <div class="exp-row">
-              <h2>Project Manager</h2>
-              <p>2019-2021</p>
-            </div>
-            <h3>Google</h3>
-            <h4>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia mollit anim id est laborum.
-            </h4>
-          </div>
-        </div>
-        <div class="exp-container">
-          <div class="exp-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1"
-              stroke="black"
-              class="work-icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
-              />
-            </svg>
-          </div>
-          <div class="exp-col">
-            <div class="exp-row">
-              <h2>Project Manager</h2>
-              <p>2019-2021</p>
-            </div>
-            <h3>Google</h3>
-            <h4>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia mollit anim id est laborum.
-            </h4>
-          </div>
-        </div>
-        <div class="exp-container">
-          <div class="exp-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1"
-              stroke="black"
-              class="work-icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M16 7V4a2 2 0 00-2-2H10a2 2 0 00-2 2v3M3 13h18M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"
-              />
-            </svg>
-          </div>
-          <div class="exp-col">
-            <div class="exp-row">
-              <h2>Project Manager</h2>
-              <p>2019-2021</p>
-            </div>
-            <h3>Google</h3>
-            <h4>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia mollit anim id est laborum.
-            </h4>
-          </div>
-        </div>
-      </section>
-
     <footer>
       <div class="footer-container">
         <div class="footer-links">
-            <a href="#">Home</a>
+          <a href="#">Home</a>
           <a href="#about">About</a>
+          <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
         </div>
         <div class="social-icons">
-          <a href="https://github.com/Filbert88" class="social-icon" aria-label="GitHub Profile">
+          <a
+            href="https://github.com/Filbert88"
+            class="social-icon"
+            aria-label="GitHub Profile"
+            target="_blank"
+          >
             <svg
               width="24"
               height="24"
@@ -411,7 +484,12 @@
               ></path>
             </svg>
           </a>
-          <a href="https://www.instagram.com/filbert901/" class="social-icon" aria-label="Instagram Profile">
+          <a
+            href="https://www.instagram.com/filbert901/"
+            class="social-icon"
+            aria-label="Instagram Profile"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
@@ -419,13 +497,18 @@
               fill="currentColor"
               viewBox="0 0 256 256"
             >
-            <title>Instagram</title>
+              <title>Instagram</title>
               <path
                 d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
               ></path>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/in/filbert135/" class="social-icon" aria-label="LinkedIn Profile">
+          <a
+            href="https://www.linkedin.com/in/filbert135/"
+            class="social-icon"
+            aria-label="LinkedIn Profile"
+            target="_blank"
+          >
             <svg
               width="24"
               height="24"
